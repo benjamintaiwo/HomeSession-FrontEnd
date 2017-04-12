@@ -1,0 +1,274 @@
+/* CSS - Google Front-End Clone | Benjamin Taiwo */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+GENERAL
+-------------------------------
+*/
+
+body {
+  font-family: arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin: 10px 0 10px 0;
+  height: 30px;
+}
+
+
+/*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TOP NAVIGATION
+-------------------------------
+*/
+
+#nav_top {
+  float: right;
+  margin: 8px 30px;
+}
+
+#nav_top ul li {
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+#nav_top ul li a {
+  color: #535252;
+}
+
+#nav_top ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+
+}
+
+.nav_text, .apps {
+  padding-right: 13px;
+}
+
+li.apps {
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/apps.png");
+  background-repeat: no-repeat;
+}
+
+li.apps:hover {
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/apps_hover.png");
+  background-repeat: no-repeat;
+}
+
+.signin_button {
+  color: #fff;
+  width: 70px;
+  height:30px;
+  background-color: #4485f4;
+  border: none;
+  border-radius: 3px;
+  font-weight: bolder;
+  outline: 0;
+}
+
+.signin_button:hover {
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 .04em #4485f4;
+}
+
+.signin_button:active {
+  text-decoration: none;
+  background-color: #2d6bd4;
+}
+
+
+/*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CONTENT
+-------------------------------
+*/
+#content {
+  text-align: center;
+  margin: 10.5% auto;
+  width: 50%;
+  padding: 10px;
+}
+
+input[type="text"] {
+  width: 83%;
+  height: 29px;
+  border: 1px solid #a29f9f;
+  margin-top: 18px;
+  outline: 0;
+}
+
+input[type="text"]:hover {
+  border: 1px solid #a7a0a0;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #00f;
+}
+.search_input {
+  background: url('../images/mic_icon.png') no-repeat right;
+  background-size: 2.5%;
+  padding: 0 2px 0 0;
+  opacity: 0.5;
+}
+
+.search_input:hover {
+  opacity: 1;
+}
+
+#search_buttons {
+  margin: 20px;
+}
+
+#search_buttons ul li {
+  display: inline;
+  padding-right: 10px;
+}
+
+.search_button, .feeling_lucky_button {
+  font-size: 0.7em;
+  font-weight: bolder;
+  color: #2a2a2a;
+  background-color: #f3f3f3;
+  border: 1px solid #d2cfcf;
+  border-radius: 3px;
+  outline: 0;
+}
+
+.search_button {
+  width: 103px;
+  height: 30px;
+}
+
+.search_button:hover, .feeling_lucky_button:hover {
+  box-shadow: 0 .04em #777;
+  border: 1px solid #cac8c8;
+}
+
+.search_button:focus, .feeling_lucky_button:focus {
+  border: 1px solid #6565ff;
+}
+
+.feeling_lucky_button {
+  width: 117px;
+  height: 30px;
+}
+
+#language_comments {
+  font-size: .8em;
+  margin: 40px auto 0;
+  padding: 5px;
+}
+
+#language_comments a:hover {
+  text-decoration: underline;
+}
+
+#language_comments a:visited {
+  text-decoration: none;
+  color: #00f;
+}
+
+
+/*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FOOTER
+-------------------------------
+*/
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #f2f2f2;
+  padding:10px 50px 10px 20px;
+  font-size: .82em;
+  height: 22px;
+  width: 100%;
+}
+
+footer a {
+  color: #5c5b5b;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.left_list {
+  float: left;
+  padding-top: 5px;
+}
+
+.left_list ul li {
+  display: inline-block;
+  padding-right: 18px;
+  padding-left: 10px;
+}
+
+.right_list {
+  float: right;
+  width: 27%;
+  padding-top: 5px;
+}
+
+.right_list ul li {
+  display: inline-block;
+  padding-left: 23px;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^
+  END
+  ------------------------   */
